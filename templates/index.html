@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Snow Day Classifier</title>
+  <h1 align="center">Will New York City cancel school?</h1>
+  <style>
+			body{
+			   background-color: #dddddd;
+			   font-family: Verdana,Arial,sans-serif;
+			 }
+  </style>
+</head>
+<body>
+<div>
+  <form action="/result" method="POST">
+    <br>
+    <br>
+    <input type="text" id="AWND" name="AWND" value="10">
+    <label for="AWND">What is the average daily windspeed?</label>
+    <br>
+    <br>
+    <input type="text" id="FMTM" name="FMTM" value="2">
+    <label for="FMTM">What is the time of fastest mile? (This is the number of minutes it takes for a mile of wind to pass the sensor, typical values are 0 to 3)</label>
+    <br>
+    <br>
+    <input type="text" id="PRCP" name="PRCP" value="1">
+    <label for="PRCP">How many inches of precipitation are there?</label>
+    <br>
+    <br>
+    <input type="text" id="SNOW" name="SNOW" value="5">
+    <label for="SNOW">How many inches of snow are there?</label>
+    <br>
+    <br>
+    <input type="text" id="SNWD" name="SNWD" value="4">
+    <label for="SNWD">How many inches of snow are on the ground?</label>
+    <br>
+    <br>
+    <input type="text" id="TAVG" name="TAVG" value="25">
+    <label for="TAVG">What is the average temperature?</label>
+    <br>
+    <br>
+    <input type="text" id="TMIN" name="TMIN" value="20">
+    <label for="TMIN">What is the low temperature?</label>
+    <br>
+    <br>
+    <input type="text" id="TSUN" name="TSUN" value="100">
+    <label for="TSUN">How many minutes of sunshine are there?</label>
+    <br>
+    <br>
+    <input type="text" id="WESD" name="WESD" value="2">
+    <label for="WESD">How many inches of water would there be if all the snow melted? Enter 0 for no snow.</label>
+    <br>
+    <br>
+    <input type="text" id="WSFG" name="WSFG" value="25">
+    <label for="WSFG">What is the peak gust wind speed in mph?</label>
+    <br>
+    <br>
+    <input type="text" id="WV01" name="WV01" value="0">
+    <label for="WV01">Is there fog, ice fog, or freezing fog in the vicinity? Enter 0 for no, and 1 for yes.</label>
+    <br>
+    <br>
+    <input type="text" id="WV04" name="WV04"  value="1">
+    <label for="WV04">Are there ice pellets, sleet, snow pellets, or small hail? Enter 0 for no, and 1 for yes.</label>
+    <br>
+    <br>
+    <input type="text" id="WV05" name="WV05" value="0">
+    <label for="WV05">Is there hail (may include small hail)? Enter 0 for no, and 1 for yes.</label>
+    <br>
+    <br>
+    <input type="text" id="WV06" name="WV06" value="1">
+    <label for="WV06">Is there glaze or rime? Enter 0 for no, and 1 for yes.</label>
+    <br>
+    <br>
+    <input type="text" id="WV09" name="WV09" value="1">
+    <label for="WV09">Is there blowing or drifting snow? Enter 0 for no, and 1 for yes.</label>
+    <br>
+    <br>
+    <input type="text" id="WV11" name="WV11" value="0">
+    <label for="WV11">Are there high or damaging winds? Enter 0 for no, and 1 for yes.</label>
+    <br>
+    <br>
+    <input type="text" id="WV15" name="WV15" value="0">
+    <label for="WV15">Is there freezing drizzle? Enter 0 for no, and 1 for yes.</label>
+    <br>
+    <br>
+    <input type="text" id="WV17" name="WV17" value="0">
+    <label for="WV17">Is there freezing rain? Enter 0 for no, and 1 for yes.</label>
+    <br>
+    <br>
+    <input type="text" id="WV18" name="WV18" value="1">
+    <label for="WV18">Is there snow, snow pellets, snow grains, or ice crystals? Enter 0 for no, and 1 for yes.</label>
+    <br>
+    <br>
+    <input type="text" id="WV22" name="WV22" value="0">
+    <label for="WV22">Is there ice fog or freezing fog? Enter 0 for no, and 1 for yes.</label>
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
